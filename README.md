@@ -14,7 +14,7 @@ Whenever you hit an opponent, your damage is multiplied by the time since the la
 
 For mathy people (t: time since last attack, x: damage):
 
-![equation](http://i.imgur.com/XOfEQpJ.png)
+![equation](http://i.imgur.com/pOtnt68.png)
 
 This will effectively reduce the skill/clickiness required for simple melee combat, making melee combat one of the easiest of the classes to master.
 
