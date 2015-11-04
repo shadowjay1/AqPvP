@@ -41,22 +41,30 @@ Now on to the spells...
 Deals damage at a low cooldown at long range.
 
 Damage: 4 + 2Ab
+Cooldown: 0.5s
+Cost: 1
 
 **Launch:**
 
 Launches target away from the caster.
 
 Velocity: 1.5 + .5Ab
+Cooldown: 0
+Cost: 2
 
 **Wither:**
 
 Withers a target.
+Cooldown: 10s
+Cost: 15
 
 Wither duration: 200 + 300Ab ticks
 
 **Snare:**
 
 Launches a projectile that snares a target.
+Cooldown: 5s
+Cost: 0
 
 Snare length: 3 + 2Ab seconds
 
@@ -65,3 +73,5 @@ Snare length: 3 + 2Ab seconds
 Drains health from a target.
 
 Drain damage/healing: 1 + 1Ab
+Cooldown: 0
+Cost: 5
