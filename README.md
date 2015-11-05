@@ -75,3 +75,10 @@ Drains health from a target.
 Drain damage/healing: 1 + 1Ab  
 Cooldown: 0  
 Cost: 5
+
+**Rupture:**
+
+Opens a rupture in the dimensional plane or something. Effects unknown.
+
+Cooldown: 60
+Cost: 10
