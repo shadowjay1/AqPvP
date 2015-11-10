@@ -52,14 +52,6 @@ Velocity: 1.5 + .5Ab
 Cooldown: 0  
 Cost: 2
 
-**Wither:**
-
-Withers a target.  
-Cooldown: 10s  
-Cost: 15
-
-Wither duration: 200 + 300Ab ticks
-
 **Snare:**
 
 Launches a projectile that snares a target.  
@@ -70,7 +62,7 @@ Snare length: 3 + 2Ab seconds
 
 **Drain:**
 
-Drains health from a target.
+Drains health from a target while slowing them.
 
 Drain damage/healing: 1 + 1Ab  
 Cooldown: 0  
@@ -82,3 +74,15 @@ Opens a rupture in the dimensional plane or something. Effects unknown.
 
 Cooldown: 60
 Cost: 10
+
+**Capture:**
+
+Captures a creature and places it in a portable creature summoning sphere.
+
+Cooldown: 0
+Cost: 0
+Item cost: 1 ender pearl with lore ["Spherical capturing device"]
+
+### Summoner
+
+A summoner summons other creatures to do the battle for them. The capture spell from above must be used to capture a creature. The captured creature can then be placed by right-clicking the egg on the ground. All of the creature's attributes/data are saved in the egg. Commands are given by throwing a snowball with ["Command"] lore. If the snowball hits the ground, all summoned creatures are ordered to move to the hit location. If the snowball hits an entity, all summoned creatures are ordered to attack that entity. If the owner drops a snowball, all summoned creatures are ordered to follow the owner.
