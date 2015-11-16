@@ -76,5 +76,5 @@ Cost: 5
 
 Opens a rupture in the dimensional plane or something. Effects unknown.
 
-Cooldown: 60
+Cooldown: 60  
 Cost: 10
