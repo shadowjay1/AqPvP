@@ -18,6 +18,10 @@ For mathy people (t: time since last attack, x: damage):
 
 This will effectively reduce the skill/clickiness required for simple melee combat, making melee combat one of the easiest of the classes to master.
 
+### Launcher
+
+Currently a golden hoe functions as a potion launcher. A potion launcher will charge up (3s charge time) when selected in the hotbar and then can be fired by right-clicking when fully charged. The potion launcher will launch splash potions starting from left->right in the hot bar and then from top->bottom left->right in the main inventory. Potion launchers can launch splash potions marked "(Launcher-only)"; these potions cannot be normally thrown.
+
 ### Mage
 
 The mage will use different wands (blaze rods by default), to cast different spells. Spells consume hunger as a resource, and players cannot carry food while having a wand in their inventory. Because of this, players who want to cast lots of spells during a fight will need to keep plenty of saturation potions in their combat inventories.
@@ -74,15 +78,3 @@ Opens a rupture in the dimensional plane or something. Effects unknown.
 
 Cooldown: 60
 Cost: 10
-
-**Capture:**
-
-Captures a creature and places it in a portable creature summoning sphere.
-
-Cooldown: 0
-Cost: 0
-Item cost: 1 ender pearl with lore ["Spherical capturing device"]
-
-### Summoner
-
-A summoner summons other creatures to do the battle for them. The capture spell from above must be used to capture a creature. The captured creature can then be placed by right-clicking the egg on the ground. All of the creature's attributes/data are saved in the egg. Commands are given by throwing a snowball with ["Command"] lore. If the snowball hits the ground, all summoned creatures are ordered to move to the hit location. If the snowball hits an entity, all summoned creatures are ordered to attack that entity. If the owner drops a snowball, all summoned creatures are ordered to follow the owner.
