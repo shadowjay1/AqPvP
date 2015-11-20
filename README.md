@@ -36,7 +36,7 @@ The potion launcher will launch splash potions starting from left->right in the 
 Potion launch order:  
 <img src=http://i.imgur.com/sFdKJgo.png height=100></img>
 
-Potion launchers can launch splash potions marked "(Launcher-only)"; these potions cannot be normally thrown.
+Potion launchers can launch splash potions marked "(Launcher-only)"; these potions cannot be normally thrown.  
 Special-use-only Potions:  
 <img src=http://i.imgur.com/Pe7N4aF.png height=100></img>
 
