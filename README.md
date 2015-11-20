@@ -19,7 +19,7 @@ For mathy people (t: time since last attack, x: damage):
 This will effectively reduce the skill/clickiness required for simple melee combat, making melee combat one of the easiest of the classes to master.
 
 **Unchanged aspects of combat:**
-Currently Bows and vanilla potions are unchanged for the fighter class.
+Currently bows and vanilla potions are unchanged for the fighter class.
 
 ### Potion Launcher
 
