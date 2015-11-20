@@ -68,7 +68,7 @@ Cooldown: 0.5s
 Cost: 1
 
 **Launch:**  
-<img src=http://i.imgur.com/4mcb36X.png height=200></img>  
+<img src=http://i.imgur.com/7bXoiwb.jpg height=200></img>  
 Launches target away from the caster.
 
 Velocity: 1.5 + .5Ab  
@@ -76,7 +76,7 @@ Cooldown: 0
 Cost: 2
 
 **Snare:**  
-<img src=http://i.imgur.com/7bXoiwb.jpg height=200></img>  
+<img src=http://i.imgur.com/4mcb36X.png height=200></img>  
 Launches a projectile that snares a target.  
 Cooldown: 5s  
 Cost: 0
