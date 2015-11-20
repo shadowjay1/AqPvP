@@ -18,9 +18,28 @@ For mathy people (t: time since last attack, x: damage):
 
 This will effectively reduce the skill/clickiness required for simple melee combat, making melee combat one of the easiest of the classes to master.
 
-### Launcher
+**Unchanged aspects of combat:**
+Currently Bows and vanilla potions are unchanged for the fighter class.
 
-Currently a golden hoe functions as a potion launcher. A potion launcher will charge up (3s charge time) when selected in the hotbar and then can be fired by right-clicking when fully charged. The potion launcher will launch splash potions starting from left->right in the hot bar and then from top->bottom left->right in the main inventory. Potion launchers can launch splash potions marked "(Launcher-only)"; these potions cannot be normally thrown.
+### Potion Launcher
+
+The Potion Launcher is a long-range class that excels in providing long range AoE damage and support.
+
+Currently, a golden hoe functions as a potion launcher. A potion launcher will charge up (3s charge time) when selected in the hotbar and then can be fired by right-clicking when fully charged. 
+Potion Launcher not charged:
+![unchargedlauncher](http://i.imgur.com/KlnBA2n.png)
+
+Potion Launcher charged and ready to fire:
+![chargedlauncher](http://i.imgur.com/0YxmTjl.png)
+
+The potion launcher will launch splash potions starting from left->right in the hot bar and then from top->bottom left->right in the main inventory. 
+Potion launch order:
+![launchorder](http://i.imgur.com/sFdKJgo.png)
+
+Potion launchers can launch splash potions marked "(Launcher-only)"; these potions cannot be normally thrown.
+Special-use-only Potions:
+![specialuse](http://i.imgur.com/Pe7N4aF.png)
+
 
 ### Mage
 
@@ -65,7 +84,7 @@ Cost: 0
 Snare length: 3 + 2Ab seconds
 
 **Drain:**
-
+![drain](http://i.imgur.com/Vx2yWIy.png)
 Drains health from a target while slowing them.
 
 Drain damage/healing: 1 + 1Ab  
@@ -73,7 +92,7 @@ Cooldown: 0
 Cost: 5
 
 **Rupture:**
-
+![rupture](http://i.imgur.com/xvECmdJ.png)
 Opens a rupture in the dimensional plane or something. Effects unknown.
 
 Cooldown: 60  
