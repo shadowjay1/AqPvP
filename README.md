@@ -25,14 +25,14 @@ Currently Bows and vanilla potions are unchanged for the fighter class.
 
 The Potion Launcher is a long-range class that excels in providing long range AoE damage and support.
 
-Currently, a golden hoe functions as a potion launcher. A potion launcher will charge up (3s charge time) when selected in the hotbar and then can be fired by right-clicking when fully charged. 
+Currently, a golden hoe functions as a potion launcher. A potion launcher will charge up (3s charge time) when selected in the hotbar and then can be fired by right-clicking when fully charged.  
 Potion Launcher not charged:  
 <img src=http://i.imgur.com/KlnBA2n.png height=100></img>
 
 Potion Launcher charged and ready to fire:  
 <img src=http://i.imgur.com/0YxmTjl.png height=100></img>
 
-The potion launcher will launch splash potions starting from left->right in the hot bar and then from top->bottom left->right in the main inventory. 
+The potion launcher will launch splash potions starting from left->right in the hot bar and then from top->bottom left->right in the main inventory.  
 Potion launch order:  
 <img src=http://i.imgur.com/sFdKJgo.png height=100></img>
 
