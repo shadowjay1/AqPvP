@@ -97,3 +97,27 @@ Opens a rupture in the dimensional plane or something. Effects unknown.
 
 Cooldown: 60  
 Cost: 10
+
+## Runes
+
+Runes are expensive late-game items that give certain effects to players that have them. Players can have a maximum of one rune. Runes appear in-game as enchanted books with the first line of lore stating the rune's name. A rune can be anywhere in the player's inventory to give the effect.
+
+### Magic protection
+
+Reduces magic damage by 50%.
+
+### Quick launcher
+
+Reduces launcher cooldown by 50%.
+
+### Hunger regeneration
+
+Restores .5 hunger every 100 ticks (5 seconds).
+
+### Tenacity
+
+Reduces Launch spell/Knockback enchant effect by 40%, reduces Snare spell duration by 40%.
+
+### Ambush
+
+Gives stealth when out-of-combat and still for 5 seconds.
