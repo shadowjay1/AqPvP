@@ -1,0 +1,7 @@
+name: AqPvP
+author: Aqlow
+version: 0.1
+main: me.aqlow.spigot.pvp.AqPvP
+commands:
+  aqpvp:
+    description: "Modify AqPvP settings"
