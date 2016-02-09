@@ -18,6 +18,7 @@ import net.md_5.bungee.api.ChatColor;
 import net.minecraft.server.v1_8_R3.NBTTagCompound;
 
 public class AqUtil {
+	private static int currentId = Integer.MAX_VALUE;
 	public static final char ENCODING_CHAR = ChatColor.COLOR_CHAR;
 	public static final String ENCODING_SEPARATOR = "" + ENCODING_CHAR + ENCODING_CHAR;
 	public static final char ESCAPE_CHAR = '~';
@@ -31,6 +32,10 @@ public class AqUtil {
 		ESCAPED_R.put('n', '\n');
 		ESCAPED.put(ENCODING_CHAR, '%');
 		ESCAPED_R.put('%', ENCODING_CHAR);
+	}
+	
+	public static int generateEntityId() {
+		return currentId--;
 	}
 	
 	@SuppressWarnings("unchecked")

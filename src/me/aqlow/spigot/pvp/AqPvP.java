@@ -16,8 +16,8 @@ import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.aqlow.spigot.pvp.ai.AIManager;
 import me.aqlow.spigot.pvp.damage.AqEntityDamageByEntityEvent;
+import me.aqlow.spigot.pvp.events.MageLoseFocusEvent;
 import me.aqlow.spigot.pvp.spells.DrainSpell;
 import me.aqlow.spigot.pvp.spells.LaunchSpell;
 import me.aqlow.spigot.pvp.spells.RuptureSpell;
@@ -54,10 +54,12 @@ public class AqPvP extends JavaPlugin {
 		this.getServer().getPluginManager().registerEvents(new LauncherManager(), this);
 		this.getServer().getPluginManager().registerEvents(MagicManager.instance, this);
 		this.getServer().getPluginManager().registerEvents(new CreatureManager(), this);
-		this.getServer().getPluginManager().registerEvents(new AIManager(), this);
+		//this.getServer().getPluginManager().registerEvents(new AIManager(), this);
 		this.getServer().getPluginManager().registerEvents(RuneManager.instance, this);
+		this.getServer().getPluginManager().registerEvents(new MageLoseFocusEvent.EventListener(), this);
+		//this.getServer().getPluginManager().registerEvents(new SoulManager(), this);
 		SpellProjectile.registerListener();
-		StructureManager.registerListener();
+		//StructureManager.registerListener();
 		
 		// Near target mode: punching an entity causes the player to "target" the entity and will do damage
 		//		over time if the player is near the target

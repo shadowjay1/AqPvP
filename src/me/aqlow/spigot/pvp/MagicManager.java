@@ -2,9 +2,12 @@ package me.aqlow.spigot.pvp;
 
 import java.util.HashMap;
 
+import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Bat;
+import org.bukkit.entity.Blaze;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -27,6 +30,7 @@ import me.aqlow.spigot.pvp.spells.RuptureSpell;
 import me.aqlow.spigot.pvp.spells.SmiteSpell;
 import me.aqlow.spigot.pvp.spells.SnareSpell;
 import me.aqlow.spigot.pvp.spells.Spell;
+import me.aqlow.spigot.pvp.spells.SummonSpell;
 import me.aqlow.spigot.pvp.spells.Targetable;
 import me.aqlow.spigot.pvp.util.ItemBlocker;
 import me.aqlow.spigot.pvp.util.ItemBlockerManager;
@@ -37,7 +41,8 @@ public class MagicManager implements Listener {
 	
 	private static Material WAND_MATERIAL = Material.BLAZE_ROD;
 	// Array of active spells
-	private static Spell[] spells = new Spell[] {new LaunchSpell(), new SmiteSpell(), new PullSpell(), new DrainSpell(), new SnareSpell(), new RuptureSpell(), new DebugSpell()};
+	private Spell[] spells = new Spell[] {new LaunchSpell(), new SmiteSpell(), new PullSpell(), new DrainSpell(), new SnareSpell(), new RuptureSpell(), new DebugSpell(),
+			new SummonSpell(Bat.class, 10, 60000), new SummonSpell(Blaze.class, 10, 240000 * 0)};
 	// Ab (Armor bonus) values per armor piece
 	private static HashMap<Material, Float> armor = new HashMap<Material, Float>();
 	
@@ -77,6 +82,14 @@ public class MagicManager implements Listener {
 	
 	public MagicManager() {
 		ItemBlockerManager.instance.addBlocker(foodBlocker);
+		
+		for(Spell spell : spells) {
+			System.out.println("Spell: " + spell.getName());
+			if(spell instanceof Listener) {
+				Bukkit.getPluginManager().registerEvents((Listener) spell, AqPvP.instance);
+				System.out.println("Registered spell: " + spell.getName());
+			}
+		}
 	}
 	
 	public static void load(FileConfiguration config) {

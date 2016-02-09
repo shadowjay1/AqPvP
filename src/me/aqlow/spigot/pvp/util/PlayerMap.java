@@ -58,18 +58,22 @@ public class PlayerMap<T> implements Listener {
 	}
 	
 	public void put(Player p, T obj) {
+		if(p == null) return;
 		map.put(p.getUniqueId(), obj);
 	}
 	
 	public T get(Player p) {
+		if(p == null) return null;
 		return map.get(p.getUniqueId());
 	}
 	
 	public boolean contains(Player p) {
+		if(p == null) return false;
 		return map.containsKey(p.getUniqueId());
 	}
 	
 	public T remove(Player p) {
+		if(p == null) return null;
 		return map.remove(p.getUniqueId());
 	}
 	

@@ -14,7 +14,6 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
@@ -35,7 +34,7 @@ import me.aqlow.spigot.pvp.util.PseudoEntityWrapper;
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
-public class SnareSpell implements Castable, Targetable, Listener {
+public class SnareSpell implements Castable, Targetable {
 	private ArrayList<WeakReference<Arrow>> arrows = new ArrayList<WeakReference<Arrow>>();
 	
 	public static int COST = 0;
@@ -74,8 +73,6 @@ public class SnareSpell implements Castable, Targetable, Listener {
 				}
 			}
 		}, 1, 1);
-		
-		Bukkit.getPluginManager().registerEvents(this, AqPvP.instance);
 		
 		ProtocolLibrary.getProtocolManager().addPacketListener(new PacketListener() {
 			@Override
